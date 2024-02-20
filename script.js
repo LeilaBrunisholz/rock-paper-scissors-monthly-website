@@ -1,9 +1,8 @@
 let userName = prompt('enter your name')
-let story = `Hello, ${userName}, prepare to lose.`
+let names = `Hello, ${userName}, prepare to lose.`
 let userNameOutputDiv = document.getElementById('userNameOutput')
-console.log(story)
-userNameOutputDiv.innerHTML = `<p>${story}</p>`
-//users name - dont know why it only works with story //
+console.log(names)
+userNameOutputDiv.innerHTML = `<p>${names}</p>`
 
 function shakeMagic8Ball(){
     const question = prompt('Ask the magic 8 ball a question');
