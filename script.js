@@ -24,29 +24,17 @@ function playRound(userSelection){
  //Display Selections
  document.getElementById("comp_selection").textContent = computerChoice
  document.getElementById("user_selection").textContent = userChoice
+
+ //Evaluate the winner
+
+ 
 }
    
     
 const randomNumber = Math.floor(Math.random()*3);
 let answer, image, color;
 
-switch (randomNumber) {
-    case 0:
-        answer = "The computer chose... Rock";
-        image = "yes.jpg"
-        color = "text-success";
-        break;
-    case 1:
-        answer = "The computer chose... Paper";
-        image = "no.jpg" //change this!!;
-        color = "text-danger";
-        break;
-    case 2:
-        answer = "The computer chose... Scissors";
-        image = "later.jpg" //change this!!;
-        color = "text-secondary";
-        break;
-}
+
 
 const responseText = document.getElementById('response-text');
 responseText.innerText = answer;
@@ -55,7 +43,6 @@ document.getElementById('response-image').src = image;
 
 
 
-}
 
 
 
