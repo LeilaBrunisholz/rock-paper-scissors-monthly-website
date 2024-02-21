@@ -3,6 +3,8 @@ let names = `Hello, ${userName}, prepare to lose.`
 let userNameOutputDiv = document.getElementById('userNameOutput')
 console.log(names)
 userNameOutputDiv.innerHTML = `<p>${names}</p>`
+//user name// 
+
 
 function shakeMagic8Ball(){
     const question = prompt('Ask the magic 8 ball a question');
@@ -12,10 +14,7 @@ function shakeMagic8Ball(){
         document.getElementById('response-image').src = '#BAD/BROKENIMAGE' //FIX THIS 
     }
     
-    if (!question.trim()){
-        alert('Please enter a valid question')
-        return
-    }
+    
 const randomNumber = Math.floor(Math.random()*3);
 let answer, image, color;
 

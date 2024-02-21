@@ -3,3 +3,7 @@ background-color:rgb(235, 152, 221) ;
 color:rgb(168, 71, 155);
 font-family: "Protest Strike", sans-serif;
 }
+
+.body{
+    background-color:rgba(168, 71, 155, 0.424) ;
+}
