@@ -30,7 +30,13 @@ function playRound(userSelection){
  
 }
    
-    
+if (userChoice ==="Rock")&&
+compChoice==="Paper")
+
+
+
+
+
 const randomNumber = Math.floor(Math.random()*3);
 let answer, image, color;
 
