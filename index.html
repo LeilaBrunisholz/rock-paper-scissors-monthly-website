@@ -33,25 +33,35 @@
                 </div>
             </main>
             <body>
-                <div id="magic-8-ball" class="container text-center my-auto">
+                <div id="r-p-s" class="container text-center my-auto">
                     <h1>Choose rock, paper, or scissors.</h1>
-                    <div class="display-4" id="response-text">The computer chose...</div>
+                    <div class="display-4" id="comp_selection">The computer chose...</div>
             
                 </div>
 
-                <div id="magic-8-ball" class="container text-center my-auto">
-                    <div><button onclick="shakeMagic8Ball()" class="btn btn-secondary">Rock</button></div>
+                <div class="text-center d-flex">
+                <div id="r-p-s" class="container text-center my-auto">
+                    <div><button onclick="playRound('Rock')" class="btn btn-secondary">Rock</button></div>
                 </div>
 
-                <div id="magic-8-ball" class="container text-center my-auto">
-                    <div><button onclick="shakeMagic8Ball()" class="btn btn-secondary">Paper</button></div>
+                <div id="r-p-s" class="container text-center my-auto">
+                    <div><button onclick="playRound('Paper')" class="btn btn-secondary">Paper</button></div>
                 </div>
 
-                <div id="magic-8-ball" class="container text-center my-auto">
-                    <div><button onclick="shakeMagic8Ball()" class="btn btn-secondary">Scissors</button></div>
+                <div id="r-p-s" class="container text-center my-auto">
+                    <div><button onclick="playRound('Scissors')" class="btn btn-secondary">Scissors</button></div>
                 </div>
-               
+            </div>
            
+            <div id="r-p-s" class="container text-center my-auto">
+                <div class="display-4" id="user_selection">The user chose...</div>
+            </div>
+
+            <div class="text-center d-flex">
+            <h1>User wins</h1>
+            <h1>Computer Wins</h1>
+            <h1>Ties</h1>
+        </div>
             
         </main>
         <footer>

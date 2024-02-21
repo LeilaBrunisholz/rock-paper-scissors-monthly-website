@@ -1,19 +1,31 @@
 let userName = prompt('enter your name')
 let names = `Hello, ${userName}, prepare to lose.`
 let userNameOutputDiv = document.getElementById('userNameOutput')
+let computerChoice
+
+
 console.log(names)
 userNameOutputDiv.innerHTML = `<p>${names}</p>`
 //user name// 
 
-
-function shakeMagic8Ball(){
-    const question = prompt('Ask the magic 8 ball a question');
-    if(question === null){
-        document.getElementById('response-text').innerText = 'Please ask a question'
-        document.getElementById('response-text').classList ='text-danger'
-        document.getElementById('response-image').src = '#BAD/BROKENIMAGE' //FIX THIS 
+function playRound(userSelection){
+     userChoice = userSelection
+    //Get Computer Choice
+    const randomNumber = Math.floor(Math.random()*3);
+    if (randomNumber === 1) {
+        computerChoice = 'Rock'
     }
-    
+    else if (randomNumber === 2) {
+        computerChoice = 'Paper'
+    }
+    else  {
+        computerChoice = 'Scissor'
+    }
+ //Display Selections
+ document.getElementById("comp_selection").textContent = computerChoice
+ document.getElementById("user_selection").textContent = userChoice
+}
+   
     
 const randomNumber = Math.floor(Math.random()*3);
 let answer, image, color;
