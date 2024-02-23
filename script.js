@@ -30,11 +30,6 @@ function playRound(userSelection){
  
 }
    
-if (userChoice ==="Rock")&&
-compChoice==="Paper")
-
-
-
 
 
 const randomNumber = Math.floor(Math.random()*3);
@@ -51,6 +46,14 @@ document.getElementById('response-image').src = image;
 
 
 
+
+if (userChoice === 'Rock' && computerChoice === 'Rock'){
+    console.log('Tie')
+} else {
+    console.log('stop')
+}
+
+//in order for this to show up you have to assign the ties an id so that it could change the number 
 
 
 
