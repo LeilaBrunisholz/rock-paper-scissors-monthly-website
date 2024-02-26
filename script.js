@@ -42,11 +42,11 @@ function playRound(userSelection){
     console.log('Computer Wins')
     compScore++
     console.log(userScore)
-} else (userChoice === 'Rock' && computerChoice === 'Scissors'){
+} else (userChoice === 'Rock' && computerChoice === 'Scissors')
     console.log('You win')
     userScore++
     console.log(userScore)
-} 
+
 //user chooses Paper
 if (userChoice === 'Paper' && computerChoice === 'Paper'){
     console.log('Tie')
@@ -56,11 +56,26 @@ if (userChoice === 'Paper' && computerChoice === 'Paper'){
     console.log('Computer Wins')
     compScore++
     console.log(userScore)
-} else (userChoice === 'Paper' && computerChoice === 'Rock'){
+} else (userChoice === 'Paper' && computerChoice === 'Rock')
     console.log('You win')
     userScore++
     console.log(userScore)
-} 
+
+    //user chooses Scissor
+if (userChoice === 'Scissor' && computerChoice === 'Scissor'){
+    console.log('Tie')
+    ties++   
+    console.log(userScore)
+} else if (userChoice === 'Scissor' && computerChoice === 'Rock'){
+    console.log('Computer Wins')
+    compScore++
+    console.log(userScore)
+} else (userChoice === 'Scissor' && computerChoice === 'Paper')
+    console.log('You win')
+    userScore++
+    console.log(userScore)
+
+
 
 
 //update visuals on site
