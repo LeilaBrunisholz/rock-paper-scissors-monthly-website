@@ -42,22 +42,24 @@ function playRound(userSelection){
     console.log('Computer Wins')
     compScore++
     console.log(userScore)
-} else {
+} else (userChoice === 'Rock' && computerChoice === 'Scissors'){
     console.log('You win')
     userScore++
     console.log(userScore)
 } 
 //user chooses Paper
-if (userChoice === 'Paper' && computerChoice === 'Rock'){
+if (userChoice === 'Paper' && computerChoice === 'Paper'){
     console.log('Tie')
     ties++   
-} else if (userChoice === 'Paper' && computerChoice === 'Paper'){
+    console.log(userScore)
+} else if (userChoice === 'Paper' && computerChoice === 'Scissors'){
     console.log('Computer Wins')
     compScore++
-} else {
+    console.log(userScore)
+} else (userChoice === 'Paper' && computerChoice === 'Rock'){
     console.log('You win')
     userScore++
-   
+    console.log(userScore)
 } 
 
 
