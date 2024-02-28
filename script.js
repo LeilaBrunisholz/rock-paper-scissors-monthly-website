@@ -6,6 +6,7 @@ let computerChoice
 let compScore = 0
 let userScore = 0
 let ties = 0
+let rounds = 0
 
 
 console.log(names)
@@ -75,6 +76,13 @@ else if (userChoice === 'Scissor' && computerChoice === 'Scissor'){
     console.log('You win')
     userScore++
     console.log(userScore)
+}
+
+
+else if(userChoice === 'Rock'){
+    console.log('round 1')
+    rounds++
+    console.log(rounds)
 }
 
 

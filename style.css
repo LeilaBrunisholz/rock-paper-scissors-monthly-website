@@ -7,3 +7,17 @@ font-family: "Protest Strike", sans-serif;
 .body{
     background-color:rgba(168, 71, 155, 0.424) ;
 }
+
+.button{
+    background: white;
+    border-color:rgb(168, 71, 155);
+    border-width: 3px;
+}
+
+.font{
+    font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(168, 71, 155);
+}

@@ -18,6 +18,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
     </head>
 
     <body class="body">
@@ -26,30 +29,35 @@
         </header>
         <main>
             <main>
+                <div class="font">
                 <div class="container my-4">
                     <div id="userNameOutput" class="text-center bg-secondary text-white">
+                    </div>
                         <!--name-->
                     </div>
                 </div>
             </main>
             <body>
+
+                <div class="font">
                 <div id="r-p-s" class="container text-center my-auto">
-                    <h1>Choose rock, paper, or scissors.</h1>
+                    <p class="bg-secondary text-white">Click rock, paper, or scissors. When the round it over, click refresh to reset the game. Good luck!</p>
                     <div class="display-4" id="comp_selection">The computer chose...</div>
+                
             
                 </div>
 
                 <div class="text-center d-flex">
                 <div id="r-p-s" class="container text-center my-auto">
-                    <div><button onclick="playRound('Rock')" class="btn btn-secondary">Rock</button></div>
+                    <div class="button"><button onclick="playRound('Rock')" class="button btn btn-light">Rock</button></div>
                 </div>
 
                 <div id="r-p-s" class="container text-center my-auto">
-                    <div><button onclick="playRound('Paper')" class="btn btn-secondary">Paper</button></div>
+                    <div class="button"><button onclick="playRound('Paper')" class="button btn btn-light">Paper</button></div>
                 </div>
 
                 <div id="r-p-s" class="container text-center my-auto">
-                    <div><button onclick="playRound('Scissor')" class="btn btn-secondary">Scissors</button></div>
+                    <div class="button"><button onclick="playRound('Scissor')" class="button btn btn-light">Scissors</button></div>
                 </div>
             </div>
            
@@ -57,12 +65,14 @@
                 <div class="display-4" id="user_selection">The user chose...</div>
             </div>
 
-            <div class="text-center d-flex" id="Ties">
+            <div class="text-center my-auto id="Ties">
                 <div>
             <h1 id="userWins">User wins = 0</h1>
             <h1 id="compWins">Computer Wins = 0</h1>
             <h1 id="ties">Ties = </h1>
+            <h1 id="rounds">Round = </h1>
         </div>
+    </div>
             
         </main>
         <footer>
