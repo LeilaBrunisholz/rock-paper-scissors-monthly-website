@@ -85,7 +85,7 @@ else if(userChoice === 'Rock' || userChoice === 'Scissor' || userChoice === 'Pap
     console.log(rounds)
 }
 
-if (Round === 5){
+else if (Round === 5){
     console.log('Game over')
 } else if (compScore>userScore){
     console.log('computer wins')
