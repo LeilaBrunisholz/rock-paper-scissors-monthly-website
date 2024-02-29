@@ -79,12 +79,21 @@ else if (userChoice === 'Scissor' && computerChoice === 'Scissor'){
 }
 
 
-else if(userChoice === 'Rock'){
+else if(userChoice === 'Rock' || userChoice === 'Scissor' || userChoice === 'Paper'){
     console.log('round 1')
     rounds++
     console.log(rounds)
 }
 
+if (Round === 5){
+    console.log('Game over')
+} else if (compScore>userScore){
+    console.log('computer wins')
+} else if (compScore<userScore){
+    console.log ('you win')
+} else {
+    console.log ('tie')
+}
 
 
 //update visuals on site
