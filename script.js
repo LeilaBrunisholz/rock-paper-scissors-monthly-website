@@ -63,7 +63,7 @@ function playRound(userChoice) {
         compScore++
         console.log(userScore)
     } else if (userChoice === 'Scissor' && computerChoice === 'Paper') {
-        console.log('You win')
+        winner='You win'
         userScore++
         console.log(userScore)
     }
@@ -87,18 +87,25 @@ function displayResults() {
 
 function checkEndGame() {
 
-    if (rounds >= 5) {
-        winner ='Game over'
-        if (compScore > userScore) {
-            winner = 'computer wins'
-        } else if (compScore < userScore) {
-            winner = 'you win'
-        } else {
-            winner='No one wins'
-        }
+    if (rounds === 5  && compScore > userScore ) {
+        document.getElementById('buttons').classList.toggle('d-none')
+        winner ='Game over, Computer Wins!'
+    } else if (rounds === 5  && compScore < userScore){
+        document.getElementById('buttons').classList.toggle('d-none')
+        winner ='Game over, You Win, CONGRATULATIONS!'
+    } else if (rounds === 5 ){
+        document.getElementById('buttons').classList.toggle('d-none')
+        winner ='tie'
     }
 
-}
+    }
+
+    function restart(){
+        window.location.reload();
+    }
+
+
+
 
 
 
