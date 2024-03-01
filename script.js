@@ -7,13 +7,14 @@ let compScore = 0
 let userScore = 0
 let ties = 0
 let rounds = 0
+let winner
 
 
 userNameOutputDiv.innerHTML = `<p>${names}</p>`
 //user name// 
 
 function playRound(userChoice) {
-    
+
     //Get Computer Choice
     const randomNumber = Math.floor(Math.random() * 3);
     if (randomNumber === 0) {
@@ -66,34 +67,36 @@ function playRound(userChoice) {
         userScore++
         console.log(userScore)
     }
-rounds = rounds +1
-displayResults();
-checkEndGame();
+    rounds = rounds + 1
+    checkEndGame();
+    displayResults();
+    console.log('Here!!')
 
-    }
+}
 
-function displayResults(){
-    
+function displayResults() {
+
     //update visuals on site
     document.getElementById('userWins').textContent = `${userName} wins = ${userScore}`
     document.getElementById('compWins').textContent = `Computer wins = ${compScore}`
     document.getElementById('ties').textContent = `Ties = ${ties}`
     document.getElementById('rounds').textContent = `Rounds = ${rounds}`
+    document.getElementById('winner').textContent = `winner = ${winner}`
 }
 
 
-function checkEndGame(){
+function checkEndGame() {
 
     if (rounds >= 5) {
-        console.log('Game over')
+        winner ='Game over'
         if (compScore > userScore) {
-            console.log('computer wins')
+            winner = 'computer wins'
         } else if (compScore < userScore) {
-            console.log('you win')
+            winner = 'you win'
         } else {
-            console.log('No one wins')
+            winner='No one wins'
         }
-    } 
+    }
 
 }
 
