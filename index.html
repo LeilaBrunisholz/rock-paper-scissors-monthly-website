@@ -18,6 +18,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+        
 </head>
 
 <body class="body">
@@ -43,43 +47,47 @@
                 <div id="r-p-s" class="container text-center my-auto">
                     <p class="bg-secondary text-white">Click rock, paper, or scissors. When the round it over, click
                         refresh to reset the game. Good luck!</p>
+                        <div class="firsttwo">
                     <div class="display-4" id="comp_selection">The computer chose...</div>
-
-
                 </div>
 
-                <div id= "buttons" class="text-center d-flex">
-                    <div id="" class="container text-center my-auto">
+                </div>
+               
+                <div id= "buttons" class="text-center row my-auto">
+                    <div id="" class="col-lg-4 col-sm-6 text-center">
                         <div class="button"><button onclick="playRound('Rock')"
                                 class="button btn btn-light">Rock</button></div>
                     </div>
 
-                    <div id="" class="container text-center my-auto">
+                    <div id="" class="col-lg-4 col-sm-6 text-center">
                         <div class="button"><button onclick="playRound('Paper')"
                                 class="button btn btn-light">Paper</button></div>
                     </div>
 
-                    <div id="" class="container text-center my-auto">
+                    <div id="" class="col-lg-4 col-sm-6 text-center">
                         <div class="button"><button onclick="playRound('Scissor')"
                                 class="button btn btn-light">Scissors</button></div>
                     </div>
                 </div>
-
+            
+                <div class="firsttwo">
                 <div id="" class="container text-center my-auto">
                     <div class="display-4" id="user_selection">The user chose...</div>
                 </div>
+            </div>
 
                 <div class="text-center my-auto id=" Ties">
-                    <div>
-                        <h1 id="userWins">User wins = 0</h1>
-                        <h1 id="compWins">Computer Wins = 0</h1>
-                        <h1 id="ties">Ties = </h1>
-                        <h1 id="rounds">Round = </h1>
-                        <h1 id="winner">Winner = </h1>
+                    <div class="row">
+                        <h1 class="col-lg-4 col-sm-12" id="userWins">User wins = 0</h1>
+                        <h1 class="col-lg-4 col-sm-12" id="compWins">Computer Wins = 0</h1>
+                        <h1 class="col-lg-4 col-sm-12" id="ties">Ties = </h1>
+                        <h1 class="col-lg-4 col-sm-12" id="rounds">Round = </h1>
+                        <h1 class="col-lg-4 col-sm-12" id="winner">Winner = </h1>
                     </div>
                 </div>
-
-<button onclick="restart()">Restart</button>
+<div class="restarts">
+<button onclick="restart()">Refresh</button>
+</div>
 
     </main>
     <footer>
