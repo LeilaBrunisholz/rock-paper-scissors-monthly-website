@@ -24,6 +24,9 @@ font-family: "Protest Strike", sans-serif;
 
 .restarts{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .firsttwo{
